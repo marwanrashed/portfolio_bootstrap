@@ -59,14 +59,33 @@ Media Query
         margin-top: 1.5rem !important;
     }
 
+    .home .header-custom-size{
+    font-size: 2rem !important;
+}
+
+    .home .hello-custom {
+    font-size: 3.5rem !important;
+
+}
 
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
+@media (min-width: 992px) {
+    .home .header-custom-size{
+    font-size: 3rem !important;
+}
+
+}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    .home .header-custom-size{
+    font-size: 4.5rem  !important;
+}
+
+}
 
 /* Extra extra large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {

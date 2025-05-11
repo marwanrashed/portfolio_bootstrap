@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A website totally done using bootstrap">
     <title>DevFolio Bootstrap</title>
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/fonts.min.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fonts.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
-<body class="overflow-x-hidden " data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom">
+<body class="overflow-x-hidden " data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom fixed-top">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="#">DANIELS</a>
+            <a class="navbar-brand text-white fw-bold" href="#home">DANIELS</a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="nav-icon-collapse">
+            <div class="collapse navbar-collapse collapse-custom text-center" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
@@ -53,6 +55,43 @@
     <!-- header section -->
     <!-- navbar -->
     <header id="home" class="home vh-100">
+        <article class="container vh-100">
+            <div class="row text-center text-white flex-column justify-content-center align-items-center h-100">
+                <h5 class="text-white fw-bold col-sm-1 h1 hello-custom">Hello</h5>
+                <h1 class="text-capitalize header-custom-size">I Am
+                    <span id="typedHeader" class=""></span>
+                </h1>
+                <div class="social-links col-5 row flex-row justify-content-center mt-4">
+                    <a href="https://www.facebook.com" target="_blank" class="social-icon col-1 pe-3">
+                        <span class="fa-stack fa-1x fa-xs text-black-50">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-brands fa-facebook-f fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                    <a href="https://www.x.com" target="_blank" class="social-icon col-1 pe-3">
+                        <span class="fa-stack fa-1x fa-xs text-black-50">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-brands fa-twitter fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                    <a href="https://www.linkedin.com" target="_blank" class="social-icon col-1 pe-3">
+                        <span class="fa-stack fa-1x fa-xs text-black-50">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-brands fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                    <a href="https://www.behance.com" target="_blank" class="social-icon col-1 pe-3">
+                        <span class="fa-stack fa-1x fa-xs text-black-50">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-brands fa-behance fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                    <a href="https:www.youtube.com" target="_blank" class="social-icon col-1 pe-3">
+                        <span class="fa-stack fa-1x fa-xs text-black-50">
+                            <i class="fa-solid fa-circle fa-stack-2x"></i>
+                            <i class="fa-brands fa-youtube fa-stack-1x fa-inverse"></i>
+                        </span></a>
+                </div>
+            </div>
+
+
+        </article>
 
     </header>
 
@@ -72,6 +111,22 @@
     <section id="contact" class="contact"></section>
     <!-- footer section -->
     <footer id="footer" class="footer"></footer>
+
+
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#typedHeader', {
+            strings: ['Larry Daniels', 'Developer', 'Designer'],
+            typeSpeed: 50,
+            backspeed: 50,
+            backDelay: 1000,
+            loop: true,
+        });
+    </script>
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
