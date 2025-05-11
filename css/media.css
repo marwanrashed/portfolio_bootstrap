@@ -18,67 +18,60 @@ Media Query
 @media (min-width: 768px) {
     /* Your styles here */
 
+    .navbar-custom .navbar-nav>li>a {
+        padding: 0 1.3rem !important;
+        position: relative;
+        color: #fff !important;
+        font-family: var(--secondary-font);
+    }
+
+    /* .navbar-custom .navbar-nav>li>a::before {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: var(--bs-light);
+        position: absolute;
+        bottom: 0;
+        transition: width .3s ease-in-out;
+    } */
+
+    .nav-link.active::before {
+        content: "";
+        width: 50%;
+        height: 2px;
+        background-color: var(--bs-light);
+        position: absolute;
+        bottom: 0;
+        transition: width .3s ease-in-out;
+    }
+
+    /* .navbar-custom .navbar-nav>li>a:focus::before {
+        width: 55%;
+    }
+    .navbar-custom .navbar-nav>li>a:hover::before {
+        width: 55%;
+    } */
+
+
+    .navbar-custom .navbar-nav,
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-toggler {
+        margin-top: 1.5rem !important;
+    }
+
+
 }
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-    /* Your styles here */
-    .nav-link {
-        color: var(--bs-light);
-    }
-
-    .navbar-nav li a::before {
-        content: "";
-        height: 2px;
-        width: 0;
-        background-color: var(--bs-light);
-        position: absolute;
-        bottom: -4px;
-        transition: all 0.2s ease-in-out;
-    }
-
-
-    /* Expand underline when hovering over a link */
-    .navbar-nav li a:hover::before {
-        width: calc(100% - (1rem *2));
-        /* Full width underline on hover */
-    }
-
-    /* Nav bar hover color */
-    .nav-link:active,
-    .nav-link:focus,
-    .nav-link:hover {
-        color: var(--bs-light) !important;
-    }
-
-    html:not(html:has(:target)) li a[href="#landing"],
-    html:has(.landing:target) li a[href="#landing"],
-    html:has(.about:target) li a[href="#about"],
-    html:has(.services:target) li a[href="#services"],
-    html:has(.portfolio:target) li a[href="#portfolio"],
-    html:has(.blog:target) li a[href="#blog"],
-    html:has(.navbar:target) li a[href="#navbar"],
-    html:has(.contact:target) li a[href="#contact"] {
-        color: var(--bs-light) !important;
-    }
-
-}
+@media (min-width: 992px) {}
 
 /* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-    /* Your styles here */
-    .nav-link {
-        color: var(--bs-light);
-    }
-}
+@media (min-width: 1200px) {}
 
 /* Extra extra large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-
-    /* Your styles here */
-    .nav-link {
-        color: var(--bs-light);
+    .container {
+        width: 1200px !important;
     }
+
 }
