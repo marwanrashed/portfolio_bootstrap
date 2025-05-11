@@ -18,39 +18,7 @@ Media Query
 @media (min-width: 768px) {
     /* Your styles here */
 
-    .navbar-custom .navbar-nav>li>a {
-        padding: 0 1.3rem !important;
-        position: relative;
-        color: #fff !important;
-        font-family: var(--secondary-font);
-    }
 
-    /* .navbar-custom .navbar-nav>li>a::before {
-        content: "";
-        width: 0;
-        height: 2px;
-        background-color: var(--bs-light);
-        position: absolute;
-        bottom: 0;
-        transition: width .3s ease-in-out;
-    } */
-
-    .nav-link.active::before {
-        content: "";
-        width: 50%;
-        height: 2px;
-        background-color: var(--bs-light);
-        position: absolute;
-        bottom: 0;
-        transition: width .3s ease-in-out;
-    }
-
-    /* .navbar-custom .navbar-nav>li>a:focus::before {
-        width: 55%;
-    }
-    .navbar-custom .navbar-nav>li>a:hover::before {
-        width: 55%;
-    } */
 
 
     .navbar-custom .navbar-nav,
@@ -72,6 +40,35 @@ Media Query
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
+        .navbar-custom .navbar-nav>li>a {
+        padding: 0 1.3rem !important;
+        position: relative;
+        color: #fff !important;
+        font-family: var(--secondary-font);
+    }
+
+    /* .navbar-custom .navbar-nav>li>a::before {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: var(--bs-light);
+        position: absolute;
+        bottom: 0;
+        transition: width .3s ease-in-out;
+    } */
+
+    .nav-link.active::before {
+        background-color: var(--bs-light);
+
+    }
+
+    /* .navbar-custom .navbar-nav>li>a:focus::before {
+        width: 55%;
+    }
+    .navbar-custom .navbar-nav>li>a:hover::before {
+        width: 55%;
+    } */
     .home .header-custom-size{
     font-size: 3rem !important;
 }
@@ -93,4 +90,16 @@ Media Query
         width: 1200px !important;
     }
 
+}
+
+@media (max-width: 992px) {
+.navbar .navbar-collapse.show {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100vw;
+  background-color: #fff;
+  z-index: 999;
+  padding: 2rem;
+}
 }
