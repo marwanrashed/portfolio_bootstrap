@@ -16,15 +16,15 @@
 
 <body class="overflow-x-hidden " data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%"
     data-bs-smooth-scroll="true">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-custom position-absolute top-0 start-0 w-100">
         <div class="container">
-            <a class="navbar-brand text-white fw-bold" href="#home">DANIELS</a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <a id= "navbarBrand" class="navbar-brand text-white fw-bold" href="#home">DANIELS</a>
+            <button  class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <span id="navbarToggler" class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse collapse-custom text-center" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul id= "navbarNavList" class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
@@ -57,7 +57,7 @@
     <header id="home" class="home vh-100">
         <article class="container vh-100">
             <div class="row text-center text-white flex-column justify-content-center align-items-center h-100">
-                <h5 class="text-white fw-bold col-sm-1 h1 hello-custom">Hello</h5>
+                <h5 class="text-white fw-bold h1 hello-custom">Hello</h5>
                 <h1 class="text-capitalize header-custom-size">I Am
                     <span id="typedHeader" class=""></span>
                 </h1>
@@ -96,7 +96,59 @@
     </header>
 
     <!-- about section -->
-    <section id="about" class="about"></section>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <figure class="col-md-5">
+                    <img src="images/hero.jpg" alt="portrait of about section" class="img-fluid">
+                </figure>
+                <figcaption>
+
+                </figcaption>
+            </div>
+        </div>
+                <div class="container">
+            <div class="row">
+                <figure class="col-md-5">
+                    <img src="images/hero.jpg" alt="portrait of about section" class="img-fluid">
+                </figure>
+                <figcaption>
+
+                </figcaption>
+            </div>
+        </div>
+                <div class="container">
+            <div class="row">
+                <figure class="col-md-5">
+                    <img src="images/hero.jpg" alt="portrait of about section" class="img-fluid">
+                </figure>
+                <figcaption>
+
+                </figcaption>
+            </div>
+        </div>
+                <div class="container">
+            <div class="row">
+                <figure class="col-md-5">
+                    <img src="images/hero.jpg" alt="portrait of about section" class="img-fluid">
+                </figure>
+                <figcaption>
+
+                </figcaption>
+            </div>
+        </div>
+                <div class="container">
+            <div class="row">
+                <figure class="col-md-5">
+                    <img src="images/hero.jpg" alt="portrait of about section" class="img-fluid">
+                </figure>
+                <figcaption>
+
+                </figcaption>
+            </div>
+        </div>
+
+    </section>
     <!-- services section -->
     <section id="services" class="services"></section>
     <!-- portfolio section -->
@@ -113,7 +165,32 @@
     <footer id="footer" class="footer"></footer>
 
 
+    <script>
+        const navbar = document.getElementById("navbar");
+        const navbarNavList = document.getElementById("navbarNavList");
+        const hero = document.getElementById("home");
+        const navbarToggler = document.getElementById("navbarToggler");
+        const navbarBrand = document.getElementById("navbarBrand");
 
+        window.addEventListener("scroll", () => {
+            const heroBottom = hero.getBoundingClientRect().bottom;
+            if (heroBottom < 0) {
+                navbar.classList.add("fixed-top", "bg-white", "shadow-sm" , "scrolled" );
+                navbarNavList.classList.add("scrolled");
+                navbarToggler.classList.add("scrolled");
+                navbarBrand.classList.remove("text-white");
+                navbar.classList.remove("position-absolute", "top-0", "start-0", "w-100");
+
+            }
+            else {
+                navbar.classList.add("position-absolute", "top-0", "start-0", "w-100");
+                navbar.classList.remove("fixed-top" , "bg-white", "shadow-sm", "scrolled");
+                navbarNavList.classList.remove("scrolled");
+                navbarToggler.classList.remove("scrolled");
+                navbarBrand.classList.add("text-white");
+            }
+        });
+    </script>
     <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
