@@ -116,7 +116,7 @@ h6,
     width: 100%;
     color: var(--text-custom-primary);
     position: relative;
-    padding: 1rem;
+    /*padding: 1rem; */
     /* display: inline-block; */
     z-index: 4;
 
@@ -133,7 +133,7 @@ h6,
     background-image: url("../images/dots.png");
     background-repeat: repeat;
     position: absolute;
-    bottom: -5px;
+    bottom: -20px;
     left: 2px;
     z-index: -1;
 
