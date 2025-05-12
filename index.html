@@ -296,17 +296,116 @@
 
     </section>
     <!-- portfolio section -->
-    <section id="portfolio" class="portfolio" data-scroll-index="3"></section>
+    <section id="portfolio" class="portfolio pb-70 pt-100" data-scroll-index="3">
+        <div class="container">
+            <div class="row flex-column justify-content-between">
+                <div class="section-title align-self-center w-25 mb-5">
+                    <h3 class="text-primary-font">Portfolio.</h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- testimonials section -->
-    <section id="testimonials" class="testimonials" data-scroll-index="4"></section>
+    <section id="testimonials" class="testimonials bg-custom-light pb-70 pt-100" data-scroll-index="4">
+        <div class="container">
+            <div class="row flex-column justify-content-between">
+                <div class="section-title align-self-center w-25 mb-5">
+                    <h3 class="text-primary-font">Testimonials.</h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- stats section -->
-    <section id="stats" class="stats" data-scroll-index="5"></section>
+    <section id="stats" class="stats pb-70 pt-100" data-scroll-index="5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-3">
+                    <div class="stats-item text-center">
+                        <i class="fa-solid fa-users fa-2xl "></i>
+                        <h6 class="counter p-2 text-custom-primary text-primary-font h2 fw-bolder mt-3"
+                            data-target="850">0</h6>
+                        <p class="text-custom-secondary fw-semibold ">Happy Customers</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="stats-item text-center">
+                        <i class="fa fa-thumbs-up fa-2xl"></i>
+                        <h6 class="counter p-2 text-custom-primary text-primary-font h2 fw-bolder mt-3"
+                            data-target="230">0</h6>
+                        <p class="text-custom-secondary fw-semibold ">Complete Projects</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="stats-item text-center">
+                        <i class="fa fa-bullhorn fa-2xl"></i>
+                        <h6 class="counter p-2 text-custom-primary text-primary-font h2 fw-bolder mt-3"
+                            data-target="9450">0</h6>
+                        <p class="text-custom-secondary fw-semibold ">Lines Of Code</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <div class="stats-item text-center">
+                        <i class="fa fa-cloud-download fa-2xl"></i>
+                        <h6 class="counter p-2 text-custom-primary text-primary-font h2 fw-bolder mt-3"
+                            data-target="780">0</h6>
+                        <p class="text-custom-secondary fw-semibold ">Files Downloaded</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!-- carousel profiles section -->
-    <section id="team" class="team bg-secondary" data-scroll-index="6"></section>
+    <section id="team" class="team bg-custom-light pb-70 pt-100" data-scroll-index="6">
+        <div class="container">
+            <div class="row flex-column justify-content-between">
+                <div class="section-title align-self-center w-25 mb-5">
+                    <h3 class="text-primary-font">Our Team.</h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- contact section -->
-    <section id="contact" class="contact" data-scroll-index="7"></section>
+    <section id="contact" class="contact  pb-70 pt-100" data-scroll-index="7">
+        <div class="container">
+            <div class="row flex-column justify-content-between">
+                <div class="section-title align-self-center w-25 mb-5">
+                    <h3 class="text-primary-font">Contact Us.</h3>
+                </div>
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <!-- footer section -->
-    <footer id="footer" class="footer"></footer>
+    <footer id="footer" class="footer bg-custom-dark pb-5 pt-5">
+        <div class="conatiner">
+            <div class="row">
+                <div class="col-12">
+                    <div class="footer-content text-center">
+                        <h5 class="small text-custom-tertiary">Copy Right 2018 © By Daniels All Rights Reserved</h5>
+                    </div>
+                </div>
+            </div>
+    </footer>
 
 
     <script>
@@ -333,6 +432,29 @@
                 navbarToggler.classList.remove("scrolled");
                 navbarBrand.classList.add("text-white");
             }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const counters = document.querySelectorAll(".counter");
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target =+ counter.getAttribute("data-target");
+                    const count =+ counter.innerText;
+
+                    const increment = target / 50;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 10);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                updateCount();
+            });
         });
     </script>
     <!-- Load library from the CDN -->

@@ -139,6 +139,16 @@ h6,
 
 }
 
+.testimonials h3::after {
+    width: 100%;
+    left: 5px
+}
+
+.contact h3::after {
+    width: 90%;
+    left: 5px
+}
+
 
 /* Custom Properties */
 

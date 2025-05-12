@@ -108,4 +108,12 @@ Media Query
         z-index: 999;
         padding: 2rem;
     }
+
+
+.team h3,
+.contact h3 {
+    line-height: calc(35/16 * 1rem);
+
+
+}
 }
