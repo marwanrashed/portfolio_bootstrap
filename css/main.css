@@ -12,8 +12,8 @@
     --secondary-font: "Monteserrat", sans-serif;
     --text-custom-quaternary: #F4F4F4;
     --text-custom-tertiary: #999;
-     --text-custom-primary: #343434;
-     --text-custom-secondary: #748182;
+    --text-custom-primary: #343434;
+    --text-custom-secondary: #748182;
 }
 
 body {
@@ -37,22 +37,22 @@ section {
 
 
 .text-custom-primary {
-   
+
     color: var(--text-custom-primary) !important;
 }
 
 .text-custom-secondary {
-    
+
     color: var(--text-custom-secondary);
 }
 
 .text-custom-tertiary {
-    
+
     color: var(--text-custom-tertiary);
 }
 
 .text-custom-quaternary {
-    
+
     color: var(--text-custom-quaternary);
 }
 
@@ -259,15 +259,29 @@ h6,
     padding: 0 -12px !important;
 }
 
+a[href="#contact"] .btn:hover {
+    background-color: var(--text-custom-primary);
+    color: white;
+
+}
+
+a[href="#portfolio"] .btn:hover {
+    background-color: transparent;
+    color: black !important;
+    border: solid 1px var(--text-custom-primary);
+    transition: all 0.3s ease-in-out;
+}
+
 /* services */
 
 .fa-background {
-    color: var(--text-custom-quaternary) ;
+    color: var(--text-custom-quaternary);
     transition: color 0.3s ease-in-out;
 }
+
 .fa-main-color {
     color: var(--text-custom-primary);
-     transition: color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 }
 
 .card:hover .fa-background {
