@@ -94,7 +94,11 @@ section {
     background-color: var(--bg-custom-light);
 }
 
-h1,
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
 h2,
 h3,
 h4,
