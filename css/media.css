@@ -44,37 +44,23 @@ Media Query
     .navbar-custom .navbar-nav>li>a {
         padding: 0 1.3rem !important;
         position: relative;
-        font-family: var(--secondary-font);
+        font-family: white !important;
     }
 
 
-
-    /* .navbar-custom .navbar-nav>li>a::before {
-        content: "";
-        width: 0;
-        height: 2px;
-        background-color: var(--bs-light);
-        position: absolute;
-        bottom: 0;
-        transition: width .3s ease-in-out;
-    } */
-
-    .nav-link.active::before {
-        background-color: var(--bs-light);
-
+    .navbar-nav .nav-link.active::after {
+        width: 50%;
     }
+    #navbarNavList a {
+    color: white;
 
+}
 
-    #navbarNavList.scrolled .nav-link.active::before {
+    #navbarNavList.scrolled .nav-link.active::after {
         background-color: var(--bs-black);
     }
 
-    /* .navbar-custom .navbar-nav>li>a:focus::before {
-        width: 55%;
-    }
-    .navbar-custom .navbar-nav>li>a:hover::before {
-        width: 55%;
-    } */
+
     .home .header-custom-size {
         font-size: 3rem !important;
     }
@@ -109,11 +95,11 @@ Media Query
         padding: 2rem;
     }
 
+    
+    .team h3,
+    .contact h3 {
+        line-height: calc(35/16 * 1rem);
 
-.team h3,
-.contact h3 {
-    line-height: calc(35/16 * 1rem);
 
-
-}
+    }
 }
