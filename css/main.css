@@ -16,6 +16,7 @@
     --text-custom-secondary: #748182;
     --bg-custom-light: #F7F7F7;
     --bg-custom-dark: #1C1C1C;
+    --bg-custom-team: #5B5B5B;
 }
 
 body {
@@ -94,6 +95,10 @@ section {
 .bg-custom-light {
 
     background-color: var(--bg-custom-light);
+}
+
+.bg-custom-team {
+    background-color: var(--bg-custom-team);
 }
 
 h1 {
@@ -267,7 +272,7 @@ a[href="#contact"] .btn:hover {
 
 }
 
-a[href="#portfolio"] .btn:hover, 
+a[href="#portfolio"] .btn:hover,
 .contact .btn:hover {
     background-color: transparent;
     color: black !important;
@@ -301,6 +306,41 @@ a[href="#portfolio"] .btn:hover,
 
 /* team */
 
+.team .card picture {
+    overflow: hidden;
+    position: relative;
+}
+
+
+.team .card .img-field {
+    & img {
+        transition: all 0.4s ease 0s;
+    }
+
+
+    &:hover img {
+        transform: scale(1.2);
+    }
+
+    &:hover .overlay {
+        opacity: 1;
+        transform: rotateY(0deg) scale(1, 1);
+        cursor: pointer;
+    }
+
+}
+
+.team .card .img-field .overlay {
+    position: absolute;
+    top: 0.4rem;
+    left: 1rem;
+    right: 1rem;
+    bottom: 0.4rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    transform: rotateY(180deg) scale(0.5,0.5);
+}
 
 /* contact */
 
@@ -314,7 +354,7 @@ a[href="#portfolio"] .btn:hover,
 
 
 
-.contact .form-control, 
+.contact .form-control,
 .contact .form-control:focus,
 .contact .form-control:active {
     background-color: var(--bg-custom-light);
