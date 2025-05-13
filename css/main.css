@@ -14,6 +14,8 @@
     --text-custom-tertiary: #999;
     --text-custom-primary: #343434;
     --text-custom-secondary: #748182;
+    --bg-custom-light: #F7F7F7;
+    --bg-custom-dark: #1C1C1C;
 }
 
 body {
@@ -85,12 +87,12 @@ section {
 }
 
 .bg-custom-dark {
-    --bg-custom-dark: #1C1C1C;
+
     background-color: var(--bg-custom-dark);
 }
 
 .bg-custom-light {
-    --bg-custom-light: #F7F7F7;
+
     background-color: var(--bg-custom-light);
 }
 
@@ -265,7 +267,8 @@ a[href="#contact"] .btn:hover {
 
 }
 
-a[href="#portfolio"] .btn:hover {
+a[href="#portfolio"] .btn:hover, 
+.contact .btn:hover {
     background-color: transparent;
     color: black !important;
     border: solid 1px var(--text-custom-primary);
@@ -290,4 +293,32 @@ a[href="#portfolio"] .btn:hover {
 
 .card:hover .fa-main-color {
     color: white;
+}
+
+/* portfolio */
+
+/* testimonials */
+
+/* team */
+
+
+/* contact */
+
+.contact .contact-icons .icon-card .fa-background:hover {
+    color: var(--text-custom-primary);
+}
+
+.contact .contact-icons .icon-card .fa-background:hover .fa-main-color {
+    color: white;
+}
+
+
+
+.contact .form-control, 
+.contact .form-control:focus,
+.contact .form-control:active {
+    background-color: var(--bg-custom-light);
+    color: var(--text-custom-primary);
+    border: 0;
+    transition: all 0.3s ease-in-out;
 }
