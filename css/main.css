@@ -304,6 +304,19 @@ a[href="#portfolio"] .btn:hover,
 
 /* testimonials */
 
+#carouselExampleIndicators .carousel-item img {
+    width: 5rem;
+    border-radius: 50%;
+}
+
+#carouselExampleIndicators .carousel-indicators [data-bs-target] {
+    background-color: var(--bg-custom-team);
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+}
+
+
 /* team */
 
 .team .card picture {
@@ -357,7 +370,6 @@ a[href="#portfolio"] .btn:hover,
 .contact .form-control,
 .contact .form-control:focus,
 .contact .form-control:active {
-    background-color: var(--bg-custom-light);
     color: var(--text-custom-primary);
     border: 0;
     transition: all 0.3s ease-in-out;

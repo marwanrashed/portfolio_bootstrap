@@ -167,7 +167,7 @@
 
     </section>
     <!-- services section -->
-    <section id="services" class="services bg-custom-light pb-70 pt-100" data-scroll-index="2">
+    <section id="services" class="services bg-light pb-70 pt-100" data-scroll-index="2">
         <div class="container">
             <div class="row flex-column justify-content-between">
                 <div class="section-title align-self-center w-25 mb-5">
@@ -312,7 +312,7 @@
         </div>
     </section>
     <!-- testimonials section -->
-    <section id="testimonials" class="testimonials bg-custom-light pb-70 pt-100" data-scroll-index="4">
+    <section id="testimonials" class="testimonials bg-light pb-70 pt-100" data-scroll-index="4">
         <div class="container">
             <div class="row flex-column justify-content-between">
                 <div class="section-title align-self-center w-25 mb-5">
@@ -320,6 +320,53 @@
                 </div>
                 <div class="container">
                     <div class="row">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                            <div class="carousel-inner pb-5">
+                                <div class="carousel-item active">
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <img src="./images/1_New1.jpg" class="img-fluid" alt="portrait of client">
+                                        <p class="text-center text-custom-secondary px-5 w-75">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Ratione odit ipsum
+                                            commodi excepturi laboriosam vitae nihil, doloremque voluptatibus voluptatum
+                                            velit?</p>
+                                        <h6 class="text-custom-primary text-primary-font">Alex Smith</h6>
+                                        <p class="text-custom-secondary fw-semibold">Client</p>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <img src="./images/testi-1.jpg" class="d-block" alt="portrait of client">
+                                        <p class="text-center text-custom-secondary px-5 w-75">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Ratione odit ipsum
+                                            commodi excepturi laboriosam vitae nihil, doloremque voluptatibus voluptatum
+                                            velit?</p>
+                                        <h6 class="text-custom-primary text-primary-font">Sam Kubik</h6>
+                                        <p class="text-custom-secondary fw-semibold">Client</p>
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="d-flex flex-column align-items-center gap-3">
+                                        <img src="./images/testi-2.jpg" class="d-block" alt="portrait of client">
+                                        <p class="text-center text-custom-secondary px-5 w-75">Lorem ipsum dolor sit amet
+                                            consectetur adipisicing elit. Ratione odit ipsum
+                                            commodi excepturi laboriosam vitae nihil, doloremque voluptatibus voluptatum
+                                            velit?</p>
+                                        <h6 class="text-custom-primary text-primary-font">Tom Dean</h6>
+                                        <p class="text-custom-secondary fw-semibold">Client</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-indicators position-static gap-2">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -367,11 +414,11 @@
         </div>
     </section>
     <!-- carousel profiles section -->
-    <section id="team" class="team bg-custom-light pb-70 pt-100" data-scroll-index="6">
+    <section id="team" class="team bg-light pb-70 pt-100" data-scroll-index="6">
         <div class="container">
             <div class="row flex-column justify-content-between">
-                <div class="section-title align-self-center w-25 mb-5">
-                    <h3 class="text-primary-font">Our Team.</h3>
+                <div class="section-title align-self-center  w-25 mb-5">
+                    <h3 class="text-primary-font ">Our Team.</h3>
                 </div>
                 <div class="container mb-5 mt-5">
                     <div class="row">
@@ -578,14 +625,15 @@
                         <div class="col-12">
                             <div class="row mb-3 gy-3 gx-4">
                                 <div class="col-sm-12 col-lg-6">
-                                    <input type="email" class="form-control" id="name" placeholder="Name">
+                                    <input type="email" class="form-control bg-light" id="name" placeholder="Name">
                                 </div>
                                 <div class="col-sm-12 col-lg-6">
-                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <input type="email" class="form-control bg-light" id="email" placeholder="Email">
                                 </div>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" placeholder="Message" id="textarea" rows="5"></textarea>
+                                <textarea class="form-control bg-light" placeholder="Message" id="textarea"
+                                    rows="5"></textarea>
                             </div>
                             <div class="mb-3">
                                 <button class="btn bg-custom-dark text-white px-4 rounded-1">Submit</button>
